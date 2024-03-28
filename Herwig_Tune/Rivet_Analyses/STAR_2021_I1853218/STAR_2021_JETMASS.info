@@ -1,0 +1,26 @@
+Name: STAR_2021_JETMASS
+Year: 2021
+Summary: Inclusive jet mass measurement
+Experiment: STAR
+Collider: RHIC
+InspireID: 
+Status: UNVALIDATED
+Authors:
+ - Isaac Mooney <fs3383@wayne.edu>
+ - STAR Collaboration <https://www.star.bnl.gov/>
+References:
+ - ''
+ - ''
+ - ''
+RunInfo: Comparing to MC at the particle level w/o weak decays 
+Beams: [p+, p+]
+Energies: [[100,100]]
+Luminosity_pb: 22.879 [pb-1]
+Description:
+  ''
+ValidationInfo:
+  ''
+Keywords: [jet substructure, SoftDrop, jet mass, groomed jet mass]
+BibKey: 
+BibTeX: ''
+

@@ -1,0 +1,5 @@
+MPIHandler:Power 0.12 0.48 
+MPIHandler:pTmin0 1.95 7.82
+ColourReconnector:ReconnectionProbability 0.3 1.0
+RemnantDecayer:colourDisrupt 0.25 1.0
+MPIHandler:InvRadius 0.68 2.70

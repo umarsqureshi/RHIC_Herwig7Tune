@@ -1,0 +1,1676 @@
++ set -e
++ cd
++ source setup_professor_with_rivet318.sh
+++ module load GCC/10.2.0 OpenMPI/4.0.5 ROOT/6.22.08 CMake/3.18.4 Eigen/3.3.8
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ source /data/rke_group/Software/RIVET318/local/rivetenv.sh
++++ prefix=/data/rke_group/Software/RIVET318/local
++++ exec_prefix=/data/rke_group/Software/RIVET318/local
++++ datarootdir=/data/rke_group/Software/RIVET318/local/share
++++ YODA_PYTHONPATH=/data/rke_group/Software/RIVET318/local/lib/python3.8/site-packages
++++ test -n /data/rke_group/Software/RIVET318/local/lib/python3.8/site-packages
++++ test -n /data/rke_group/Software/RIVET318/local/lib/python3.8/site-packages
++++ export PATH=/data/rke_group/Software/RIVET318/local/bin:/data/rke_group/Software/RIVET318/local/lib64/../bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/CMake/3.18.4/bin:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/ROOT/6.22.08/bin:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/SciPy-bundle/2020.11/bin:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/FFTW/3.3.8/bin:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/OpenMPI/4.0.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libarchive/3.4.3/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/LLVM/11.0.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/zstd/1.4.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/lz4/1.9.2/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/gzip/1.10/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/X11/20201008/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/fontconfig/2.13.92/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/util-linux/2.36/sbin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/util-linux/2.36/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/expat/2.2.9/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/pybind11/2.6.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Python/3.8.6/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/SQLite/3.33.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Tcl/8.6.10/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/freetype/2.10.3/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libpng/1.6.37/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/CFITSIO/3.49/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/cURL/7.72.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/PCRE/8.44/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/bzip2/1.0.8/bin:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/GSL/2.6/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/PMIx/3.1.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libfabric/1.11.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/UCX/1.9.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libevent/2.1.12/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/hwloc/2.2.0/sbin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/hwloc/2.2.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libxml2/2.9.10/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/XZ/5.2.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/numactl/2.0.13/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/ncurses/6.2/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/binutils/2.35/bin:/accre/arch/easybuild/software/Core/GCCcore/10.2.0/bin:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/contrib:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/bin:/data/rke_group/Software/RIVET318/local/bin:/data/rke_group/Software/RIVET318/local/lib64/../bin:/accre/usr/sbin:/accre/usr/bin:/usr/lpp/mmfs/bin:/panfs/accrepfs.vampire/home/sohailu/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/sohailu/.local/bin:/home/sohailu/bin
++++ PATH=/data/rke_group/Software/RIVET318/local/bin:/data/rke_group/Software/RIVET318/local/lib64/../bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/CMake/3.18.4/bin:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/ROOT/6.22.08/bin:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/SciPy-bundle/2020.11/bin:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/FFTW/3.3.8/bin:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/OpenMPI/4.0.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libarchive/3.4.3/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/LLVM/11.0.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/zstd/1.4.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/lz4/1.9.2/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/gzip/1.10/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/X11/20201008/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/fontconfig/2.13.92/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/util-linux/2.36/sbin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/util-linux/2.36/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/expat/2.2.9/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/pybind11/2.6.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Python/3.8.6/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/SQLite/3.33.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Tcl/8.6.10/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/freetype/2.10.3/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libpng/1.6.37/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/CFITSIO/3.49/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/cURL/7.72.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/PCRE/8.44/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/bzip2/1.0.8/bin:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/GSL/2.6/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/PMIx/3.1.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libfabric/1.11.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/UCX/1.9.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libevent/2.1.12/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/hwloc/2.2.0/sbin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/hwloc/2.2.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libxml2/2.9.10/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/XZ/5.2.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/numactl/2.0.13/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/ncurses/6.2/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/binutils/2.35/bin:/accre/arch/easybuild/software/Core/GCCcore/10.2.0/bin:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/contrib:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/bin:/data/rke_group/Software/RIVET318/local/bin:/data/rke_group/Software/RIVET318/local/lib64/../bin:/accre/usr/sbin:/accre/usr/bin:/usr/lpp/mmfs/bin:/panfs/accrepfs.vampire/home/sohailu/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/sohailu/.local/bin:/home/sohailu/bin
++++ export LD_LIBRARY_PATH=/data/rke_group/Software/RIVET318/local/lib:/data/rke_group/Software/RIVET318/local/lib64:/data/rke_group/Software/RIVET318/local/lib64:/data/rke_group/Software/RIVET318/local/lib64:/data/rke_group/Software/RIVET318/local/lib64:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/ROOT/6.22.08/lib:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/SciPy-bundle/2020.11/lib/python3.8/site-packages/numpy/core/lib:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/SciPy-bundle/2020.11/lib:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/ScaLAPACK/2.1.0/lib:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/FFTW/3.3.8/lib:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/OpenMPI/4.0.5/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libarchive/3.4.3/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/GL2PS/1.4.2/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/freeglut/3.2.1/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libGLU/9.0.1/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Mesa/20.2.1/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/LLVM/11.0.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libunwind/1.4.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libglvnd/1.3.2/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libdrm/2.4.102/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/zstd/1.4.5/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/lz4/1.9.2/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/X11/20201008/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/fontconfig/2.13.92/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/util-linux/2.36/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/expat/2.2.9/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Python/3.8.6/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libffi/3.3/lib64:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libffi/3.3/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/GMP/6.2.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/SQLite/3.33.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Tcl/8.6.10/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libreadline/8.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/freetype/2.10.3/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libpng/1.6.37/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/CFITSIO/3.49/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/cURL/7.72.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/PCRE/8.44/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/bzip2/1.0.8/lib:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/GSL/2.6/lib:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/OpenBLAS/0.3.12/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/PMIx/3.1.5/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libfabric/1.11.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/UCX/1.9.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libevent/2.1.12/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/hwloc/2.2.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libpciaccess/0.16/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libxml2/2.9.10/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/XZ/5.2.5/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/numactl/2.0.13/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/ncurses/6.2/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/binutils/2.35/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/zlib/1.2.11/lib:/accre/arch/easybuild/software/Core/GCCcore/10.2.0/lib64:/accre/arch/easybuild/software/Core/GCCcore/10.2.0/lib:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/lib:/data/rke_group/Software/RIVET318/local/lib:/data/rke_group/Software/RIVET318/local/lib64
++++ LD_LIBRARY_PATH=/data/rke_group/Software/RIVET318/local/lib:/data/rke_group/Software/RIVET318/local/lib64:/data/rke_group/Software/RIVET318/local/lib64:/data/rke_group/Software/RIVET318/local/lib64:/data/rke_group/Software/RIVET318/local/lib64:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/ROOT/6.22.08/lib:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/SciPy-bundle/2020.11/lib/python3.8/site-packages/numpy/core/lib:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/SciPy-bundle/2020.11/lib:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/ScaLAPACK/2.1.0/lib:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/FFTW/3.3.8/lib:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/OpenMPI/4.0.5/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libarchive/3.4.3/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/GL2PS/1.4.2/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/freeglut/3.2.1/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libGLU/9.0.1/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Mesa/20.2.1/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/LLVM/11.0.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libunwind/1.4.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libglvnd/1.3.2/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libdrm/2.4.102/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/zstd/1.4.5/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/lz4/1.9.2/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/X11/20201008/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/fontconfig/2.13.92/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/util-linux/2.36/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/expat/2.2.9/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Python/3.8.6/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libffi/3.3/lib64:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libffi/3.3/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/GMP/6.2.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/SQLite/3.33.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Tcl/8.6.10/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libreadline/8.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/freetype/2.10.3/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libpng/1.6.37/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/CFITSIO/3.49/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/cURL/7.72.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/PCRE/8.44/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/bzip2/1.0.8/lib:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/GSL/2.6/lib:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/OpenBLAS/0.3.12/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/PMIx/3.1.5/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libfabric/1.11.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/UCX/1.9.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libevent/2.1.12/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/hwloc/2.2.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libpciaccess/0.16/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libxml2/2.9.10/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/XZ/5.2.5/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/numactl/2.0.13/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/ncurses/6.2/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/binutils/2.35/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/zlib/1.2.11/lib:/accre/arch/easybuild/software/Core/GCCcore/10.2.0/lib64:/accre/arch/easybuild/software/Core/GCCcore/10.2.0/lib:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/lib:/data/rke_group/Software/RIVET318/local/lib:/data/rke_group/Software/RIVET318/local/lib64
++++ export PYTHONPATH=/data/rke_group/Software/RIVET318/local/lib/python3.8/site-packages:/data/rke_group/Software/RIVET318/local/lib/python3.8/site-packages:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/ROOT/6.22.08/lib:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/SciPy-bundle/2020.11/lib/python3.8/site-packages:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/pybind11/2.6.0/lib/python3.8/site-packages:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Python/3.8.6/easybuild/python:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/lib64/python3.8/site-packages:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/lib/python3.8/site-packages:/data/rke_group/Software/RIVET318/local/lib/python3.8/site-packages
++++ PYTHONPATH=/data/rke_group/Software/RIVET318/local/lib/python3.8/site-packages:/data/rke_group/Software/RIVET318/local/lib/python3.8/site-packages:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/ROOT/6.22.08/lib:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/SciPy-bundle/2020.11/lib/python3.8/site-packages:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/pybind11/2.6.0/lib/python3.8/site-packages:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Python/3.8.6/easybuild/python:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/lib64/python3.8/site-packages:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/lib/python3.8/site-packages:/data/rke_group/Software/RIVET318/local/lib/python3.8/site-packages
+++++ echo /data/rke_group/Software/RIVET318/local/share
+++++ sed -e 's:/\+:/:g'
++++ texdatadir=/data/rke_group/Software/RIVET318/local/share
++++ export TEXMFHOME=/data/rke_group/Software/RIVET318/local/share/Rivet/texmf:/data/rke_group/Software/RIVET318/local/share/Rivet/texmf:/data/rke_group/Software/RIVET318/local/share/Rivet/texmf:
++++ TEXMFHOME=/data/rke_group/Software/RIVET318/local/share/Rivet/texmf:/data/rke_group/Software/RIVET318/local/share/Rivet/texmf:/data/rke_group/Software/RIVET318/local/share/Rivet/texmf:
++++ export HOMETEXMF=/data/rke_group/Software/RIVET318/local/share/Rivet/texmf:/data/rke_group/Software/RIVET318/local/share/Rivet/texmf:/data/rke_group/Software/RIVET318/local/share/Rivet/texmf:
++++ HOMETEXMF=/data/rke_group/Software/RIVET318/local/share/Rivet/texmf:/data/rke_group/Software/RIVET318/local/share/Rivet/texmf:/data/rke_group/Software/RIVET318/local/share/Rivet/texmf:
++++ export TEXMFCNF=/data/rke_group/Software/RIVET318/local/share/Rivet/texmf/cnf:/data/rke_group/Software/RIVET318/local/share/Rivet/texmf/cnf:/data/rke_group/Software/RIVET318/local/share/Rivet/texmf/cnf:
++++ TEXMFCNF=/data/rke_group/Software/RIVET318/local/share/Rivet/texmf/cnf:/data/rke_group/Software/RIVET318/local/share/Rivet/texmf/cnf:/data/rke_group/Software/RIVET318/local/share/Rivet/texmf/cnf:
++++ export TEXINPUTS=/data/rke_group/Software/RIVET318/local/share/Rivet/texmf/tex//:/data/rke_group/Software/RIVET318/local/share/Rivet/texmf/tex//:/data/rke_group/Software/RIVET318/local/share/Rivet/texmf/tex//:
++++ TEXINPUTS=/data/rke_group/Software/RIVET318/local/share/Rivet/texmf/tex//:/data/rke_group/Software/RIVET318/local/share/Rivet/texmf/tex//:/data/rke_group/Software/RIVET318/local/share/Rivet/texmf/tex//:
++++ export LATEXINPUTS=/data/rke_group/Software/RIVET318/local/share/Rivet/texmf/tex//:/data/rke_group/Software/RIVET318/local/share/Rivet/texmf/tex//:/data/rke_group/Software/RIVET318/local/share/Rivet/texmf/tex//:
++++ LATEXINPUTS=/data/rke_group/Software/RIVET318/local/share/Rivet/texmf/tex//:/data/rke_group/Software/RIVET318/local/share/Rivet/texmf/tex//:/data/rke_group/Software/RIVET318/local/share/Rivet/texmf/tex//:
++++ complete
++++ comppath=/data/rke_group/Software/RIVET318/local/etc/bash_completion.d/rivet-completion
++++ test -e /data/rke_group/Software/RIVET318/local/etc/bash_completion.d/rivet-completion
++++ source /data/rke_group/Software/RIVET318/local/etc/bash_completion.d/rivet-completion
+++++ test -n ''
+++++ type _filedir
+++++ complete -F _rivet rivet
+++++ complete -F _rivet_config rivet-config
+++++ complete -F _rivet_buildplugin rivet-buildplugin
+++++ complete -F _rivet_buildplugin rivet-build
+++++ complete -F _rivet_cmphistos -o default rivet-cmphistos
+++++ complete -F _make_plots -o default make-plots
+++++ complete -F _rivet_mkhtml rivet-mkhtml
+++++ complete -F _rivet_mkhtml_mpl rivet-mkhtml-mpl
++++ unset YODA_PYTHONPATH
+++ source /data/rke_group/Software/PROFESSOR/professor/setup3.sh
+++++ readlink -f /data/rke_group/Software/PROFESSOR/professor/setup3.sh
++++ fpath=/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/setup3.sh
+++++ dirname /panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/setup3.sh
++++ profdir=/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor
+++++ python3 -c 'import sys;v=sys.version_info[0:2];print('\''%i.%i'\''%(v))'
++++ PYV=3.8
++++ export LD_LIBRARY_PATH=/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/lib:/data/rke_group/Software/RIVET318/local/lib:/data/rke_group/Software/RIVET318/local/lib64:/data/rke_group/Software/RIVET318/local/lib64:/data/rke_group/Software/RIVET318/local/lib64:/data/rke_group/Software/RIVET318/local/lib64:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/ROOT/6.22.08/lib:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/SciPy-bundle/2020.11/lib/python3.8/site-packages/numpy/core/lib:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/SciPy-bundle/2020.11/lib:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/ScaLAPACK/2.1.0/lib:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/FFTW/3.3.8/lib:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/OpenMPI/4.0.5/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libarchive/3.4.3/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/GL2PS/1.4.2/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/freeglut/3.2.1/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libGLU/9.0.1/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Mesa/20.2.1/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/LLVM/11.0.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libunwind/1.4.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libglvnd/1.3.2/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libdrm/2.4.102/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/zstd/1.4.5/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/lz4/1.9.2/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/X11/20201008/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/fontconfig/2.13.92/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/util-linux/2.36/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/expat/2.2.9/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Python/3.8.6/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libffi/3.3/lib64:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libffi/3.3/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/GMP/6.2.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/SQLite/3.33.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Tcl/8.6.10/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libreadline/8.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/freetype/2.10.3/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libpng/1.6.37/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/CFITSIO/3.49/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/cURL/7.72.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/PCRE/8.44/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/bzip2/1.0.8/lib:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/GSL/2.6/lib:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/OpenBLAS/0.3.12/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/PMIx/3.1.5/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libfabric/1.11.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/UCX/1.9.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libevent/2.1.12/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/hwloc/2.2.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libpciaccess/0.16/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libxml2/2.9.10/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/XZ/5.2.5/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/numactl/2.0.13/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/ncurses/6.2/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/binutils/2.35/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/zlib/1.2.11/lib:/accre/arch/easybuild/software/Core/GCCcore/10.2.0/lib64:/accre/arch/easybuild/software/Core/GCCcore/10.2.0/lib:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/lib:/data/rke_group/Software/RIVET318/local/lib:/data/rke_group/Software/RIVET318/local/lib64
++++ LD_LIBRARY_PATH=/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/lib:/data/rke_group/Software/RIVET318/local/lib:/data/rke_group/Software/RIVET318/local/lib64:/data/rke_group/Software/RIVET318/local/lib64:/data/rke_group/Software/RIVET318/local/lib64:/data/rke_group/Software/RIVET318/local/lib64:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/ROOT/6.22.08/lib:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/SciPy-bundle/2020.11/lib/python3.8/site-packages/numpy/core/lib:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/SciPy-bundle/2020.11/lib:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/ScaLAPACK/2.1.0/lib:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/FFTW/3.3.8/lib:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/OpenMPI/4.0.5/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libarchive/3.4.3/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/GL2PS/1.4.2/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/freeglut/3.2.1/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libGLU/9.0.1/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Mesa/20.2.1/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/LLVM/11.0.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libunwind/1.4.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libglvnd/1.3.2/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libdrm/2.4.102/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/zstd/1.4.5/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/lz4/1.9.2/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/X11/20201008/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/fontconfig/2.13.92/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/util-linux/2.36/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/expat/2.2.9/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Python/3.8.6/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libffi/3.3/lib64:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libffi/3.3/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/GMP/6.2.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/SQLite/3.33.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Tcl/8.6.10/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libreadline/8.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/freetype/2.10.3/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libpng/1.6.37/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/CFITSIO/3.49/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/cURL/7.72.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/PCRE/8.44/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/bzip2/1.0.8/lib:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/GSL/2.6/lib:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/OpenBLAS/0.3.12/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/PMIx/3.1.5/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libfabric/1.11.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/UCX/1.9.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libevent/2.1.12/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/hwloc/2.2.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libpciaccess/0.16/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libxml2/2.9.10/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/XZ/5.2.5/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/numactl/2.0.13/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/ncurses/6.2/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/binutils/2.35/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/zlib/1.2.11/lib:/accre/arch/easybuild/software/Core/GCCcore/10.2.0/lib64:/accre/arch/easybuild/software/Core/GCCcore/10.2.0/lib:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/lib:/data/rke_group/Software/RIVET318/local/lib:/data/rke_group/Software/RIVET318/local/lib64
++++ export PYTHONPATH=/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/lib/python3.8/site-packages:/data/rke_group/Software/RIVET318/local/lib/python3.8/site-packages:/data/rke_group/Software/RIVET318/local/lib/python3.8/site-packages:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/ROOT/6.22.08/lib:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/SciPy-bundle/2020.11/lib/python3.8/site-packages:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/pybind11/2.6.0/lib/python3.8/site-packages:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Python/3.8.6/easybuild/python:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/lib64/python3.8/site-packages:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/lib/python3.8/site-packages:/data/rke_group/Software/RIVET318/local/lib/python3.8/site-packages
++++ PYTHONPATH=/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/lib/python3.8/site-packages:/data/rke_group/Software/RIVET318/local/lib/python3.8/site-packages:/data/rke_group/Software/RIVET318/local/lib/python3.8/site-packages:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/ROOT/6.22.08/lib:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/SciPy-bundle/2020.11/lib/python3.8/site-packages:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/pybind11/2.6.0/lib/python3.8/site-packages:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Python/3.8.6/easybuild/python:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/lib64/python3.8/site-packages:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/lib/python3.8/site-packages:/data/rke_group/Software/RIVET318/local/lib/python3.8/site-packages
++++ export PYTHONPATH=/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/lib64/python3.8/site-packages:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/lib/python3.8/site-packages:/data/rke_group/Software/RIVET318/local/lib/python3.8/site-packages:/data/rke_group/Software/RIVET318/local/lib/python3.8/site-packages:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/ROOT/6.22.08/lib:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/SciPy-bundle/2020.11/lib/python3.8/site-packages:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/pybind11/2.6.0/lib/python3.8/site-packages:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Python/3.8.6/easybuild/python:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/lib64/python3.8/site-packages:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/lib/python3.8/site-packages:/data/rke_group/Software/RIVET318/local/lib/python3.8/site-packages
++++ PYTHONPATH=/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/lib64/python3.8/site-packages:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/lib/python3.8/site-packages:/data/rke_group/Software/RIVET318/local/lib/python3.8/site-packages:/data/rke_group/Software/RIVET318/local/lib/python3.8/site-packages:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/ROOT/6.22.08/lib:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/SciPy-bundle/2020.11/lib/python3.8/site-packages:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/pybind11/2.6.0/lib/python3.8/site-packages:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Python/3.8.6/easybuild/python:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/lib64/python3.8/site-packages:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/lib/python3.8/site-packages:/data/rke_group/Software/RIVET318/local/lib/python3.8/site-packages
++++ export PATH=/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/bin:/data/rke_group/Software/RIVET318/local/bin:/data/rke_group/Software/RIVET318/local/lib64/../bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/CMake/3.18.4/bin:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/ROOT/6.22.08/bin:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/SciPy-bundle/2020.11/bin:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/FFTW/3.3.8/bin:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/OpenMPI/4.0.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libarchive/3.4.3/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/LLVM/11.0.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/zstd/1.4.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/lz4/1.9.2/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/gzip/1.10/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/X11/20201008/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/fontconfig/2.13.92/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/util-linux/2.36/sbin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/util-linux/2.36/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/expat/2.2.9/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/pybind11/2.6.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Python/3.8.6/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/SQLite/3.33.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Tcl/8.6.10/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/freetype/2.10.3/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libpng/1.6.37/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/CFITSIO/3.49/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/cURL/7.72.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/PCRE/8.44/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/bzip2/1.0.8/bin:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/GSL/2.6/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/PMIx/3.1.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libfabric/1.11.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/UCX/1.9.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libevent/2.1.12/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/hwloc/2.2.0/sbin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/hwloc/2.2.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libxml2/2.9.10/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/XZ/5.2.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/numactl/2.0.13/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/ncurses/6.2/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/binutils/2.35/bin:/accre/arch/easybuild/software/Core/GCCcore/10.2.0/bin:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/contrib:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/bin:/data/rke_group/Software/RIVET318/local/bin:/data/rke_group/Software/RIVET318/local/lib64/../bin:/accre/usr/sbin:/accre/usr/bin:/usr/lpp/mmfs/bin:/panfs/accrepfs.vampire/home/sohailu/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/sohailu/.local/bin:/home/sohailu/bin
++++ PATH=/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/bin:/data/rke_group/Software/RIVET318/local/bin:/data/rke_group/Software/RIVET318/local/lib64/../bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/CMake/3.18.4/bin:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/ROOT/6.22.08/bin:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/SciPy-bundle/2020.11/bin:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/FFTW/3.3.8/bin:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/OpenMPI/4.0.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libarchive/3.4.3/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/LLVM/11.0.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/zstd/1.4.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/lz4/1.9.2/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/gzip/1.10/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/X11/20201008/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/fontconfig/2.13.92/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/util-linux/2.36/sbin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/util-linux/2.36/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/expat/2.2.9/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/pybind11/2.6.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Python/3.8.6/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/SQLite/3.33.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Tcl/8.6.10/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/freetype/2.10.3/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libpng/1.6.37/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/CFITSIO/3.49/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/cURL/7.72.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/PCRE/8.44/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/bzip2/1.0.8/bin:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/GSL/2.6/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/PMIx/3.1.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libfabric/1.11.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/UCX/1.9.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libevent/2.1.12/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/hwloc/2.2.0/sbin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/hwloc/2.2.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libxml2/2.9.10/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/XZ/5.2.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/numactl/2.0.13/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/ncurses/6.2/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/binutils/2.35/bin:/accre/arch/easybuild/software/Core/GCCcore/10.2.0/bin:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/contrib:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/bin:/data/rke_group/Software/RIVET318/local/bin:/data/rke_group/Software/RIVET318/local/lib64/../bin:/accre/usr/sbin:/accre/usr/bin:/usr/lpp/mmfs/bin:/panfs/accrepfs.vampire/home/sohailu/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/sohailu/.local/bin:/home/sohailu/bin
++++ export PATH=/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/contrib:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/bin:/data/rke_group/Software/RIVET318/local/bin:/data/rke_group/Software/RIVET318/local/lib64/../bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/CMake/3.18.4/bin:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/ROOT/6.22.08/bin:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/SciPy-bundle/2020.11/bin:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/FFTW/3.3.8/bin:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/OpenMPI/4.0.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libarchive/3.4.3/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/LLVM/11.0.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/zstd/1.4.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/lz4/1.9.2/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/gzip/1.10/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/X11/20201008/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/fontconfig/2.13.92/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/util-linux/2.36/sbin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/util-linux/2.36/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/expat/2.2.9/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/pybind11/2.6.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Python/3.8.6/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/SQLite/3.33.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Tcl/8.6.10/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/freetype/2.10.3/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libpng/1.6.37/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/CFITSIO/3.49/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/cURL/7.72.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/PCRE/8.44/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/bzip2/1.0.8/bin:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/GSL/2.6/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/PMIx/3.1.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libfabric/1.11.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/UCX/1.9.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libevent/2.1.12/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/hwloc/2.2.0/sbin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/hwloc/2.2.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libxml2/2.9.10/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/XZ/5.2.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/numactl/2.0.13/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/ncurses/6.2/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/binutils/2.35/bin:/accre/arch/easybuild/software/Core/GCCcore/10.2.0/bin:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/contrib:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/bin:/data/rke_group/Software/RIVET318/local/bin:/data/rke_group/Software/RIVET318/local/lib64/../bin:/accre/usr/sbin:/accre/usr/bin:/usr/lpp/mmfs/bin:/panfs/accrepfs.vampire/home/sohailu/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/sohailu/.local/bin:/home/sohailu/bin
++++ PATH=/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/contrib:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/bin:/data/rke_group/Software/RIVET318/local/bin:/data/rke_group/Software/RIVET318/local/lib64/../bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/CMake/3.18.4/bin:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/ROOT/6.22.08/bin:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/SciPy-bundle/2020.11/bin:/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/FFTW/3.3.8/bin:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/OpenMPI/4.0.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libarchive/3.4.3/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/LLVM/11.0.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/zstd/1.4.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/lz4/1.9.2/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/gzip/1.10/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/X11/20201008/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/fontconfig/2.13.92/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/util-linux/2.36/sbin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/util-linux/2.36/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/expat/2.2.9/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/pybind11/2.6.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Python/3.8.6/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/SQLite/3.33.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Tcl/8.6.10/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/freetype/2.10.3/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libpng/1.6.37/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/CFITSIO/3.49/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/cURL/7.72.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/PCRE/8.44/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/bzip2/1.0.8/bin:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/GSL/2.6/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/PMIx/3.1.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libfabric/1.11.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/UCX/1.9.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libevent/2.1.12/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/hwloc/2.2.0/sbin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/hwloc/2.2.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libxml2/2.9.10/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/XZ/5.2.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/numactl/2.0.13/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/ncurses/6.2/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/binutils/2.35/bin:/accre/arch/easybuild/software/Core/GCCcore/10.2.0/bin:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/contrib:/panfs/accrepfs.vampire/data/rke_group/Software/PROFESSOR/professor/bin:/data/rke_group/Software/RIVET318/local/bin:/data/rke_group/Software/RIVET318/local/lib64/../bin:/accre/usr/sbin:/accre/usr/bin:/usr/lpp/mmfs/bin:/panfs/accrepfs.vampire/home/sohailu/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/sohailu/.local/bin:/home/sohailu/bin
++ cd /data/rke_group/Herwig_Tune/Rivet_Analyses/STAR_2019_I1771348
++ ./generate_rivet_analyses.sh
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:38:55
+Reading events from '../../out/0000/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:02 elapsed)
+Event 700 (0:00:02 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:38:57
+Cross-section = 6.088561e+08 pb
+Rivet run completed at 2024-03-05 11:38:57, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0000/2019_0000.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:39:00
+Reading events from '../../out/0001/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:39:02
+Cross-section = 6.269678e+08 pb
+Rivet run completed at 2024-03-05 11:39:02, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0001/2019_0001.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:39:04
+Reading events from '../../out/0002/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:39:06
+Cross-section = 6.071345e+08 pb
+Rivet run completed at 2024-03-05 11:39:06, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0002/2019_0002.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:39:08
+Reading events from '../../out/0003/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:02 elapsed)
+Event 700 (0:00:02 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:39:10
+Cross-section = 6.191045e+08 pb
+Rivet run completed at 2024-03-05 11:39:10, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0003/2019_0003.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:39:13
+Reading events from '../../out/0004/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:39:15
+Cross-section = 6.190279e+08 pb
+Rivet run completed at 2024-03-05 11:39:15, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0004/2019_0004.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:39:18
+Reading events from '../../out/0005/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:39:20
+Cross-section = 6.257054e+08 pb
+Rivet run completed at 2024-03-05 11:39:20, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0005/2019_0005.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:39:24
+Reading events from '../../out/0006/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:39:25
+Cross-section = 6.044230e+08 pb
+Rivet run completed at 2024-03-05 11:39:26, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0006/2019_0006.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:39:29
+Reading events from '../../out/0007/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:39:30
+Cross-section = 6.096394e+08 pb
+Rivet run completed at 2024-03-05 11:39:30, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0007/2019_0007.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:39:34
+Reading events from '../../out/0008/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:39:36
+Cross-section = 6.250731e+08 pb
+Rivet run completed at 2024-03-05 11:39:36, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0008/2019_0008.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:39:39
+Reading events from '../../out/0009/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:02 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:39:41
+Cross-section = 6.145219e+08 pb
+Rivet run completed at 2024-03-05 11:39:41, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0009/2019_0009.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:39:44
+Reading events from '../../out/0010/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:39:46
+Cross-section = 6.299926e+08 pb
+Rivet run completed at 2024-03-05 11:39:46, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0010/2019_0010.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:39:49
+Reading events from '../../out/0011/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:39:51
+Cross-section = 6.180757e+08 pb
+Rivet run completed at 2024-03-05 11:39:51, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0011/2019_0011.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:39:54
+Reading events from '../../out/0012/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:39:56
+Cross-section = 5.980512e+08 pb
+Rivet run completed at 2024-03-05 11:39:56, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0012/2019_0012.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:39:59
+Reading events from '../../out/0013/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:40:01
+Cross-section = 6.089230e+08 pb
+Rivet run completed at 2024-03-05 11:40:01, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0013/2019_0013.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:40:04
+Reading events from '../../out/0014/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:40:06
+Cross-section = 6.271323e+08 pb
+Rivet run completed at 2024-03-05 11:40:06, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0014/2019_0014.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:40:08
+Reading events from '../../out/0015/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:40:10
+Cross-section = 6.279000e+08 pb
+Rivet run completed at 2024-03-05 11:40:10, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0015/2019_0015.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:40:13
+Reading events from '../../out/0016/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:40:15
+Cross-section = 6.283241e+08 pb
+Rivet run completed at 2024-03-05 11:40:15, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0016/2019_0016.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:40:17
+Reading events from '../../out/0017/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:02 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:40:19
+Cross-section = 6.197504e+08 pb
+Rivet run completed at 2024-03-05 11:40:20, time elapsed = 0:00:03
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0017/2019_0017.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:40:23
+Reading events from '../../out/0018/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:40:25
+Cross-section = 6.192303e+08 pb
+Rivet run completed at 2024-03-05 11:40:25, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0018/2019_0018.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:40:28
+Reading events from '../../out/0019/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:40:29
+Cross-section = 6.263054e+08 pb
+Rivet run completed at 2024-03-05 11:40:30, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0019/2019_0019.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:40:33
+Reading events from '../../out/0020/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:00 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:40:34
+Cross-section = 6.117118e+08 pb
+Rivet run completed at 2024-03-05 11:40:34, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0020/2019_0020.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:40:37
+Reading events from '../../out/0021/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:40:39
+Cross-section = 6.126320e+08 pb
+Rivet run completed at 2024-03-05 11:40:39, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0021/2019_0021.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:40:42
+Reading events from '../../out/0022/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:40:44
+Cross-section = 6.178167e+08 pb
+Rivet run completed at 2024-03-05 11:40:44, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0022/2019_0022.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:40:46
+Reading events from '../../out/0023/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:40:48
+Cross-section = 6.198546e+08 pb
+Rivet run completed at 2024-03-05 11:40:48, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0023/2019_0023.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:40:51
+Reading events from '../../out/0024/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:40:53
+Cross-section = 6.251857e+08 pb
+Rivet run completed at 2024-03-05 11:40:53, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0024/2019_0024.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:40:56
+Reading events from '../../out/0025/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:40:58
+Cross-section = 6.101129e+08 pb
+Rivet run completed at 2024-03-05 11:40:58, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0025/2019_0025.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:41:00
+Reading events from '../../out/0026/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:02 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:41:02
+Cross-section = 6.137389e+08 pb
+Rivet run completed at 2024-03-05 11:41:02, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0026/2019_0026.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:41:05
+Reading events from '../../out/0027/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:02 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:41:07
+Cross-section = 6.378540e+08 pb
+Rivet run completed at 2024-03-05 11:41:07, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0027/2019_0027.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:41:10
+Reading events from '../../out/0028/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:00 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:41:11
+Cross-section = 6.053566e+08 pb
+Rivet run completed at 2024-03-05 11:41:11, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0028/2019_0028.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:41:14
+Reading events from '../../out/0029/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:41:16
+Cross-section = 6.122572e+08 pb
+Rivet run completed at 2024-03-05 11:41:16, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0029/2019_0029.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:41:18
+Reading events from '../../out/0030/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:02 elapsed)
+Event 700 (0:00:02 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:41:20
+Cross-section = 6.181702e+08 pb
+Rivet run completed at 2024-03-05 11:41:20, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0030/2019_0030.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:41:23
+Reading events from '../../out/0031/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:41:24
+Cross-section = 6.087649e+08 pb
+Rivet run completed at 2024-03-05 11:41:24, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0031/2019_0031.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:41:27
+Reading events from '../../out/0032/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:41:29
+Cross-section = 6.375352e+08 pb
+Rivet run completed at 2024-03-05 11:41:29, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0032/2019_0032.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:41:32
+Reading events from '../../out/0033/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:41:34
+Cross-section = 6.168770e+08 pb
+Rivet run completed at 2024-03-05 11:41:34, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0033/2019_0033.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:41:37
+Reading events from '../../out/0034/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:41:39
+Cross-section = 6.036853e+08 pb
+Rivet run completed at 2024-03-05 11:41:39, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0034/2019_0034.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:41:42
+Reading events from '../../out/0035/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:41:43
+Cross-section = 5.981013e+08 pb
+Rivet run completed at 2024-03-05 11:41:44, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0035/2019_0035.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:41:47
+Reading events from '../../out/0036/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:41:48
+Cross-section = 6.117914e+08 pb
+Rivet run completed at 2024-03-05 11:41:48, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0036/2019_0036.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:41:51
+Reading events from '../../out/0037/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:41:53
+Cross-section = 6.009389e+08 pb
+Rivet run completed at 2024-03-05 11:41:53, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0037/2019_0037.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:41:55
+Reading events from '../../out/0038/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:02 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:41:57
+Cross-section = 6.212207e+08 pb
+Rivet run completed at 2024-03-05 11:41:57, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0038/2019_0038.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:41:59
+Reading events from '../../out/0039/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:02 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:42:01
+Cross-section = 6.080979e+08 pb
+Rivet run completed at 2024-03-05 11:42:01, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0039/2019_0039.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:42:03
+Reading events from '../../out/0040/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:02 elapsed)
+Event 700 (0:00:02 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:42:05
+Cross-section = 6.047162e+08 pb
+Rivet run completed at 2024-03-05 11:42:05, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0040/2019_0040.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:42:08
+Reading events from '../../out/0041/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:00 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:42:09
+Cross-section = 6.222031e+08 pb
+Rivet run completed at 2024-03-05 11:42:09, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0041/2019_0041.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:42:12
+Reading events from '../../out/0042/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:00 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:42:13
+Cross-section = 6.294665e+08 pb
+Rivet run completed at 2024-03-05 11:42:13, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0042/2019_0042.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:42:16
+Reading events from '../../out/0043/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:42:17
+Cross-section = 6.126704e+08 pb
+Rivet run completed at 2024-03-05 11:42:17, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0043/2019_0043.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:42:20
+Reading events from '../../out/0044/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:42:21
+Cross-section = 6.073024e+08 pb
+Rivet run completed at 2024-03-05 11:42:21, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0044/2019_0044.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:42:24
+Reading events from '../../out/0045/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:42:25
+Cross-section = 6.336411e+08 pb
+Rivet run completed at 2024-03-05 11:42:25, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0045/2019_0045.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:42:28
+Reading events from '../../out/0046/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:42:29
+Cross-section = 6.372823e+08 pb
+Rivet run completed at 2024-03-05 11:42:29, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0046/2019_0046.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:42:32
+Reading events from '../../out/0047/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:42:33
+Cross-section = 6.240172e+08 pb
+Rivet run completed at 2024-03-05 11:42:34, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0047/2019_0047.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:42:36
+Reading events from '../../out/0048/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:42:37
+Cross-section = 6.034779e+08 pb
+Rivet run completed at 2024-03-05 11:42:38, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0048/2019_0048.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:42:40
+Reading events from '../../out/0049/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:42:42
+Cross-section = 6.146814e+08 pb
+Rivet run completed at 2024-03-05 11:42:42, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0049/2019_0049.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:42:44
+Reading events from '../../out/0050/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:42:46
+Cross-section = 6.342791e+08 pb
+Rivet run completed at 2024-03-05 11:42:46, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0050/2019_0050.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:42:48
+Reading events from '../../out/0051/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:42:50
+Cross-section = 6.079288e+08 pb
+Rivet run completed at 2024-03-05 11:42:50, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0051/2019_0051.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:42:52
+Reading events from '../../out/0052/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:42:54
+Cross-section = 6.282378e+08 pb
+Rivet run completed at 2024-03-05 11:42:54, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0052/2019_0052.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:42:56
+Reading events from '../../out/0053/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:42:58
+Cross-section = 6.161553e+08 pb
+Rivet run completed at 2024-03-05 11:42:58, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0053/2019_0053.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:43:00
+Reading events from '../../out/0054/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:02 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:43:02
+Cross-section = 6.170858e+08 pb
+Rivet run completed at 2024-03-05 11:43:02, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0054/2019_0054.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:43:04
+Reading events from '../../out/0055/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:43:06
+Cross-section = 6.079711e+08 pb
+Rivet run completed at 2024-03-05 11:43:06, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0055/2019_0055.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:43:08
+Reading events from '../../out/0056/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:43:10
+Cross-section = 6.360658e+08 pb
+Rivet run completed at 2024-03-05 11:43:10, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0056/2019_0056.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:43:12
+Reading events from '../../out/0057/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:43:14
+Cross-section = 5.975492e+08 pb
+Rivet run completed at 2024-03-05 11:43:14, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0057/2019_0057.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:43:16
+Reading events from '../../out/0058/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:43:18
+Cross-section = 6.017378e+08 pb
+Rivet run completed at 2024-03-05 11:43:18, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0058/2019_0058.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:43:20
+Reading events from '../../out/0059/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:43:22
+Cross-section = 6.100385e+08 pb
+Rivet run completed at 2024-03-05 11:43:22, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0059/2019_0059.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:43:24
+Reading events from '../../out/0060/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:02 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:43:26
+Cross-section = 6.054135e+08 pb
+Rivet run completed at 2024-03-05 11:43:26, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0060/2019_0060.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:43:28
+Reading events from '../../out/0061/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:02 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:43:30
+Cross-section = 6.240668e+08 pb
+Rivet run completed at 2024-03-05 11:43:30, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0061/2019_0061.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:43:32
+Reading events from '../../out/0062/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:02 elapsed)
+Event 700 (0:00:02 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:43:34
+Cross-section = 6.272467e+08 pb
+Rivet run completed at 2024-03-05 11:43:34, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0062/2019_0062.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:43:37
+Reading events from '../../out/0063/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:00 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:43:38
+Cross-section = 6.009451e+08 pb
+Rivet run completed at 2024-03-05 11:43:38, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0063/2019_0063.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:43:41
+Reading events from '../../out/0064/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:00 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:43:42
+Cross-section = 6.311733e+08 pb
+Rivet run completed at 2024-03-05 11:43:42, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0064/2019_0064.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:43:45
+Reading events from '../../out/0065/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:00 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:43:46
+Cross-section = 6.143396e+08 pb
+Rivet run completed at 2024-03-05 11:43:46, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0065/2019_0065.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:43:49
+Reading events from '../../out/0066/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:43:50
+Cross-section = 6.151019e+08 pb
+Rivet run completed at 2024-03-05 11:43:50, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0066/2019_0066.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:43:53
+Reading events from '../../out/0067/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:43:55
+Cross-section = 6.403127e+08 pb
+Rivet run completed at 2024-03-05 11:43:55, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0067/2019_0067.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:43:57
+Reading events from '../../out/0068/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:43:59
+Cross-section = 6.065088e+08 pb
+Rivet run completed at 2024-03-05 11:43:59, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0068/2019_0068.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:44:01
+Reading events from '../../out/0069/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:44:03
+Cross-section = 6.085241e+08 pb
+Rivet run completed at 2024-03-05 11:44:03, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0069/2019_0069.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:44:05
+Reading events from '../../out/0070/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:44:07
+Cross-section = 6.071038e+08 pb
+Rivet run completed at 2024-03-05 11:44:07, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0070/2019_0070.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:44:09
+Reading events from '../../out/0071/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:44:11
+Cross-section = 6.112112e+08 pb
+Rivet run completed at 2024-03-05 11:44:11, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0071/2019_0071.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:44:13
+Reading events from '../../out/0072/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:44:15
+Cross-section = 6.205179e+08 pb
+Rivet run completed at 2024-03-05 11:44:15, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0072/2019_0072.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:44:17
+Reading events from '../../out/0073/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:44:19
+Cross-section = 6.127982e+08 pb
+Rivet run completed at 2024-03-05 11:44:19, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0073/2019_0073.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:44:21
+Reading events from '../../out/0074/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:02 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:44:23
+Cross-section = 6.186498e+08 pb
+Rivet run completed at 2024-03-05 11:44:23, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0074/2019_0074.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:44:25
+Reading events from '../../out/0075/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:02 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:44:27
+Cross-section = 6.252859e+08 pb
+Rivet run completed at 2024-03-05 11:44:27, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0075/2019_0075.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:44:29
+Reading events from '../../out/0076/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:02 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:44:31
+Cross-section = 6.150035e+08 pb
+Rivet run completed at 2024-03-05 11:44:31, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0076/2019_0076.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:44:33
+Reading events from '../../out/0077/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:02 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:44:35
+Cross-section = 6.108501e+08 pb
+Rivet run completed at 2024-03-05 11:44:35, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0077/2019_0077.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:44:37
+Reading events from '../../out/0078/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:02 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:44:39
+Cross-section = 5.951445e+08 pb
+Rivet run completed at 2024-03-05 11:44:39, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0078/2019_0078.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:44:42
+Reading events from '../../out/0079/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:00 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:44:43
+Cross-section = 6.146610e+08 pb
+Rivet run completed at 2024-03-05 11:44:43, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0079/2019_0079.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:44:46
+Reading events from '../../out/0080/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:00 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:44:47
+Cross-section = 6.085726e+08 pb
+Rivet run completed at 2024-03-05 11:44:47, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0080/2019_0080.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:44:50
+Reading events from '../../out/0081/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:44:51
+Cross-section = 6.153123e+08 pb
+Rivet run completed at 2024-03-05 11:44:51, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0081/2019_0081.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:44:54
+Reading events from '../../out/0082/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:44:55
+Cross-section = 6.242617e+08 pb
+Rivet run completed at 2024-03-05 11:44:55, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0082/2019_0082.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:44:58
+Reading events from '../../out/0083/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:44:59
+Cross-section = 6.191293e+08 pb
+Rivet run completed at 2024-03-05 11:44:59, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0083/2019_0083.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:45:02
+Reading events from '../../out/0084/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:45:03
+Cross-section = 6.085263e+08 pb
+Rivet run completed at 2024-03-05 11:45:03, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0084/2019_0084.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:45:06
+Reading events from '../../out/0085/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:45:07
+Cross-section = 6.322314e+08 pb
+Rivet run completed at 2024-03-05 11:45:07, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0085/2019_0085.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:45:10
+Reading events from '../../out/0086/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:45:12
+Cross-section = 6.085783e+08 pb
+Rivet run completed at 2024-03-05 11:45:12, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0086/2019_0086.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:45:14
+Reading events from '../../out/0087/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:45:16
+Cross-section = 6.200893e+08 pb
+Rivet run completed at 2024-03-05 11:45:16, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0087/2019_0087.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:45:18
+Reading events from '../../out/0088/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:45:20
+Cross-section = 6.126443e+08 pb
+Rivet run completed at 2024-03-05 11:45:20, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0088/2019_0088.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:45:22
+Reading events from '../../out/0089/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:45:24
+Cross-section = 6.123052e+08 pb
+Rivet run completed at 2024-03-05 11:45:24, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0089/2019_0089.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:45:26
+Reading events from '../../out/0090/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:45:28
+Cross-section = 6.148270e+08 pb
+Rivet run completed at 2024-03-05 11:45:28, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0090/2019_0090.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:45:30
+Reading events from '../../out/0091/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:02 elapsed)
+Event 700 (0:00:02 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:45:32
+Cross-section = 6.132780e+08 pb
+Rivet run completed at 2024-03-05 11:45:32, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0091/2019_0091.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:45:35
+Reading events from '../../out/0092/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:00 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:45:36
+Cross-section = 6.064907e+08 pb
+Rivet run completed at 2024-03-05 11:45:36, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0092/2019_0092.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:45:39
+Reading events from '../../out/0093/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:00 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:45:40
+Cross-section = 6.175853e+08 pb
+Rivet run completed at 2024-03-05 11:45:40, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0093/2019_0093.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:45:43
+Reading events from '../../out/0094/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:00 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:45:44
+Cross-section = 6.277059e+08 pb
+Rivet run completed at 2024-03-05 11:45:44, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0094/2019_0094.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:45:47
+Reading events from '../../out/0095/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:00 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:45:48
+Cross-section = 6.127281e+08 pb
+Rivet run completed at 2024-03-05 11:45:48, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0095/2019_0095.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:45:51
+Reading events from '../../out/0096/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:00 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:45:52
+Cross-section = 6.158167e+08 pb
+Rivet run completed at 2024-03-05 11:45:52, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0096/2019_0096.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:45:55
+Reading events from '../../out/0097/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:00 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:45:56
+Cross-section = 6.243974e+08 pb
+Rivet run completed at 2024-03-05 11:45:56, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0097/2019_0097.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:45:58
+Reading events from '../../out/0098/RHIC_Dijet.hepmc'
+Event 100 (0:00:01 elapsed)
+Event 200 (0:00:01 elapsed)
+Event 300 (0:00:01 elapsed)
+Event 400 (0:00:01 elapsed)
+Event 500 (0:00:01 elapsed)
+Event 600 (0:00:02 elapsed)
+Event 700 (0:00:02 elapsed)
+Event 800 (0:00:02 elapsed)
+Event 900 (0:00:02 elapsed)
+Event 1000 (0:00:02 elapsed)
+Finished event loop at 2024-03-05 11:46:00
+Cross-section = 6.079733e+08 pb
+Rivet run completed at 2024-03-05 11:46:00, time elapsed = 0:00:02
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0098/2019_0098.yoda
+Rivet 3.1.8 running on machine cn1595.vampire (x86_64) at 2024-03-05 11:46:03
+Reading events from '../../out/0099/RHIC_Dijet.hepmc'
+Event 100 (0:00:00 elapsed)
+Event 200 (0:00:00 elapsed)
+Event 300 (0:00:00 elapsed)
+Event 400 (0:00:00 elapsed)
+Event 500 (0:00:00 elapsed)
+Event 600 (0:00:01 elapsed)
+Event 700 (0:00:01 elapsed)
+Event 800 (0:00:01 elapsed)
+Event 900 (0:00:01 elapsed)
+Event 1000 (0:00:01 elapsed)
+Finished event loop at 2024-03-05 11:46:04
+Cross-section = 6.183739e+08 pb
+Rivet run completed at 2024-03-05 11:46:04, time elapsed = 0:00:01
+Histograms written to /panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0099/2019_0099.yoda
++ echo Stopping:
++ date
++ echo Done.

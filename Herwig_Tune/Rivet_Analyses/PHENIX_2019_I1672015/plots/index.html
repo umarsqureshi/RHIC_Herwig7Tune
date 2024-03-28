@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Plots from Rivet analyses</title>
+<style>
+      html { font-family: sans-serif; }
+      img { border: 0; }
+      a { text-decoration: none; font-weight: bold; }
+    </style>
+            <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [["$","$"]]}
+        });
+        </script>
+        <script type="text/javascript" async
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
+        
+
+        <script type="text/javascript">
+            function filterPlots(ana, patt) {
+                var regex = new RegExp(patt);
+                var sec = document.getElementById('ana_'+ana);
+                var plots = sec.getElementsByClassName('plot');
+                var i; for (i = 0; i < plots.length; ++i) {
+                    // var viz = (regex.test(plots[i].id)) ? 'visible' : 'hidden';
+                    // plots[i].style.visibility = viz;
+                    var dis = (regex.test(plots[i].id)) ? 'block' : 'none';
+                    plots[i].style.display = dis;
+                }
+                return false;
+           }
+        </script>
+        </head>
+<body><h2>Plots from Rivet analyses</h2>
+
+
+<h3><a href="PHENIX_2019_I1672015/index.html" style="text-decoration:none;">Drell Yan production at low masses $4.8 &lt; m_{\mu^+\mu^-} &lt; 8.2 $ GeV at $\sqrt{s} = 200$ GeV (PHENIX_2019_I1672015)</a></h3>
+<p><a href="https://inspirehep.net/literature/1672015">Inspire</a> &#124; <a href="http://hepdata.net/record/ins1672015">HepData</a> &#124; Phys. Rev., D99(2019), 072003 &#124; DOI:https://doi.org/10.1103/PhysRevD.99.072003 &#124; <a href="https://arxiv.org/abs/1805.02448">arXiv:1805.02448</a></p>
+<p style="font-size:smaller;">PHENIX reports differential cross sections of $\mu^+\mu^-$ pairs from semileptonic heavy-flavor decays and the Drell-Yan production mechanism measured in p+p collisions at $\sqrt{s} = 200$ GeV at forward and backward rapidity (1.2 &lt; |y| &lt; 2.2). The $\mu^+\mu^-$ pairs from $c\bar{c}$, $b\bar{b}$, and Drell-Yan are separated using a template fit to unlike- and like-sign muon pair spectra in mass and $p_T$.</p>
+<footer style="clear:both; margin-top:3em; padding-top:3em">
+<p>Generated at Tuesday, 27. February 2024 01:51AM</p>
+<p>Created with command: <pre>rivet-mkhtml --mc-errs -o plots --pwd PHENIX_2019_I1672015_0000.yoda:Tune_0000 PHENIX_2019_I1672015_0001.yoda:Tune_0001 PHENIX_2019_I1672015_0002.yoda:Tune_0002 PHENIX_2019_I1672015_0003.yoda:Tune_0003 PHENIX_2019_I1672015_0004.yoda:Tune_0004</pre></p>
+</footer>
+
+</body>
+</html>

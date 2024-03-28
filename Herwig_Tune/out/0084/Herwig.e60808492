@@ -1,0 +1,99 @@
++ set -e
++ cd
++ source setup_herwig.sh
+++ module load GCC/10.2.0 CMake/3.18.4 OpenMPI/4.0.5 SQLite/3.33.0 Python/2.7.18 Autotools/20200321
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ pip3 install six --user
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+++ echo '################ /  / ^^/ ##########################'
+++ echo '############### /--/   / ###########################'
+++ echo '############## /  /   / ############################'
+++ source /data/rke_group/Software/HERWIG/local/bin/activate
++++ deactivate nondestructive
++++ '[' '' = Unset ']'
++++ '[' -n '' ']'
++++ '[' '' = Unset ']'
++++ '[' -n '' ']'
++++ '[' '' = Unset ']'
++++ '[' -n '' ']'
++++ '[' '' = Unset ']'
++++ '[' -n '' ']'
++++ '[' '' = Unset ']'
++++ '[' -n '' ']'
++++ '[' '' = Unset ']'
++++ '[' -n '' ']'
++++ '[' '' = Unset ']'
++++ '[' -n '' ']'
++++ '[' '' = Unset ']'
++++ '[' -n '' ']'
++++ '[' -n /bin/bash -o -n '' ']'
++++ hash -r
++++ '[' -n '' ']'
++++ unset TEXMFHOME
++++ unset HOMETEXMF
++++ unset TEXMFCNF
++++ unset TEXINPUTS
++++ unset LATEXINPUTS
++++ unset HERWIG_ENV
++++ '[' '!' nondestructive = nondestructive ']'
++++ HERWIG_ENV=/data/rke_group/Software/HERWIG/local
++++ export HERWIG_ENV
++++ export TEXMFHOME=/data/rke_group/Software/HERWIG/local/share/Rivet/texmf:
++++ TEXMFHOME=/data/rke_group/Software/HERWIG/local/share/Rivet/texmf:
++++ export HOMETEXMF=/data/rke_group/Software/HERWIG/local/share/Rivet/texmf:
++++ HOMETEXMF=/data/rke_group/Software/HERWIG/local/share/Rivet/texmf:
++++ export TEXMFCNF=/data/rke_group/Software/HERWIG/local/share/Rivet/texmf/cnf:
++++ TEXMFCNF=/data/rke_group/Software/HERWIG/local/share/Rivet/texmf/cnf:
++++ export TEXINPUTS=/data/rke_group/Software/HERWIG/local/share/Rivet/texmf/tex//:
++++ TEXINPUTS=/data/rke_group/Software/HERWIG/local/share/Rivet/texmf/tex//:
++++ export LATEXINPUTS=/data/rke_group/Software/HERWIG/local/share/Rivet/texmf/tex//:
++++ LATEXINPUTS=/data/rke_group/Software/HERWIG/local/share/Rivet/texmf/tex//:
++++ _OLD_VIRTUAL_PATH=/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libtool/2.4.6/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Automake/1.16.2/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Autoconf/2.69/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/M4/1.4.18/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Python/2.7.18/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/SQLite/3.33.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Tcl/8.6.10/bin:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/OpenMPI/4.0.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/PMIx/3.1.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libfabric/1.11.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/UCX/1.9.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libevent/2.1.12/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/hwloc/2.2.0/sbin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/hwloc/2.2.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libxml2/2.9.10/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/XZ/5.2.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/numactl/2.0.13/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/CMake/3.18.4/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libarchive/3.4.3/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/cURL/7.72.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/bzip2/1.0.8/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/ncurses/6.2/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/binutils/2.35/bin:/accre/arch/easybuild/software/Core/GCCcore/10.2.0/bin:/accre/usr/sbin:/accre/usr/bin:/usr/lpp/mmfs/bin:/panfs/accrepfs.vampire/home/sohailu/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/sohailu/.local/bin:/home/sohailu/bin
++++ PATH=/data/rke_group/Software/HERWIG/local/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libtool/2.4.6/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Automake/1.16.2/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Autoconf/2.69/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/M4/1.4.18/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Python/2.7.18/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/SQLite/3.33.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Tcl/8.6.10/bin:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/OpenMPI/4.0.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/PMIx/3.1.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libfabric/1.11.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/UCX/1.9.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libevent/2.1.12/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/hwloc/2.2.0/sbin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/hwloc/2.2.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libxml2/2.9.10/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/XZ/5.2.5/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/numactl/2.0.13/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/CMake/3.18.4/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libarchive/3.4.3/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/cURL/7.72.0/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/bzip2/1.0.8/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/ncurses/6.2/bin:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/binutils/2.35/bin:/accre/arch/easybuild/software/Core/GCCcore/10.2.0/bin:/accre/usr/sbin:/accre/usr/bin:/usr/lpp/mmfs/bin:/panfs/accrepfs.vampire/home/sohailu/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/sohailu/.local/bin:/home/sohailu/bin
++++ export PATH
++++ _OLD_VIRTUAL_PYTHONPATH=/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Python/2.7.18/easybuild/python
++++ PYTHONPATH=/data/rke_group/Software/HERWIG/local/lib64/python2.7/site-packages:/data/rke_group/Software/HERWIG/local/lib/python2.7/site-packages:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Python/2.7.18/easybuild/python
++++ export PYTHONPATH
++++ _OLD_VIRTUAL_LHAPATH=Unset
++++ LHAPATH=/data/rke_group/Software/HERWIG/local/share/LHAPDF:
++++ export LHAPATH
++++ _OLD_VIRTUAL_LD_LIBRARY_PATH=/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libtool/2.4.6/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Python/2.7.18/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libffi/3.3/lib64:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libffi/3.3/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/GMP/6.2.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/SQLite/3.33.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Tcl/8.6.10/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libreadline/8.0/lib:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/OpenMPI/4.0.5/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/PMIx/3.1.5/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libfabric/1.11.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/UCX/1.9.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libevent/2.1.12/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/hwloc/2.2.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libpciaccess/0.16/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libxml2/2.9.10/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/XZ/5.2.5/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/numactl/2.0.13/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libarchive/3.4.3/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/cURL/7.72.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/bzip2/1.0.8/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/ncurses/6.2/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/binutils/2.35/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/zlib/1.2.11/lib:/accre/arch/easybuild/software/Core/GCCcore/10.2.0/lib64:/accre/arch/easybuild/software/Core/GCCcore/10.2.0/lib
++++ LD_LIBRARY_PATH=/data/rke_group/Software/HERWIG/local/lib64/HJets:/data/rke_group/Software/HERWIG/local/lib/HJets:/data/rke_group/Software/HERWIG/local/lib:/data/rke_group/Software/HERWIG/local/lib64:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libtool/2.4.6/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Python/2.7.18/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libffi/3.3/lib64:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libffi/3.3/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/GMP/6.2.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/SQLite/3.33.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/Tcl/8.6.10/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libreadline/8.0/lib:/accre/arch/easybuild/software/Compiler/GCC/10.2.0/OpenMPI/4.0.5/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/PMIx/3.1.5/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libfabric/1.11.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/UCX/1.9.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libevent/2.1.12/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/hwloc/2.2.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libpciaccess/0.16/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libxml2/2.9.10/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/XZ/5.2.5/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/numactl/2.0.13/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/libarchive/3.4.3/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/cURL/7.72.0/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/bzip2/1.0.8/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/ncurses/6.2/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/binutils/2.35/lib:/accre/arch/easybuild/software/Compiler/GCCcore/10.2.0/zlib/1.2.11/lib:/accre/arch/easybuild/software/Core/GCCcore/10.2.0/lib64:/accre/arch/easybuild/software/Core/GCCcore/10.2.0/lib
++++ export LD_LIBRARY_PATH
++++ _OLD_VIRTUAL_CC=Unset
++++ CC=gcc
++++ export CC
++++ _OLD_VIRTUAL_CXX=Unset
++++ CXX='g++ -std=c++11'
++++ export CXX
++++ _OLD_VIRTUAL_FC=Unset
++++ FC=gfortran
++++ export FC
++++ _OLD_VIRTUAL_F77=Unset
++++ F77=gfortran
++++ export F77
++++ '[' -z '' ']'
++++ _OLD_VIRTUAL_PS1=
++++ '[' x '!=' x ']'
+++++ basename /data/rke_group/Software/HERWIG/local
++++ PS1='(local)'
++++ export PS1
++++ '[' -n /bin/bash -o -n '' ']'
++++ hash -r
++ cd /data/rke_group/Herwig_Tune/out/0084
++ Herwig read RHIC_Dijet.in
++ Herwig run RHIC_Dijet.run -N 1000000
+event>     initevent>        0  1000000event>        1  1000000event>        2  1000000event>        5  1000000event>       10  1000000event>       20  1000000event>       50  1000000event>      100  1000000event>      200  1000000event>      500  1000000event>     1000  1000000event>     2000  1000000event>     5000  1000000event>    10000  1000000event>    20000  1000000event>    30000  1000000event>    40000  1000000event>    50000  1000000event>    60000  1000000event>    70000  1000000event>    80000  1000000event>    90000  1000000event>   100000  1000000event>   110000  1000000event>   120000  1000000event>   130000  1000000event>   140000  1000000event>   150000  1000000event>   160000  1000000event>   170000  1000000event>   180000  1000000event>   190000  1000000event>   200000  1000000event>   210000  1000000event>   220000  1000000event>   230000  1000000event>   240000  1000000event>   250000  1000000event>   260000  1000000event>   270000  1000000event>   280000  1000000event>   290000  1000000event>   300000  1000000event>   310000  1000000event>   320000  1000000event>   330000  1000000event>   340000  1000000event>   350000  1000000event>   360000  1000000event>   370000  1000000event>   380000  1000000event>   390000  1000000event>   400000  1000000event>   410000  1000000event>   420000  1000000event>   430000  1000000event>   440000  1000000event>   450000  1000000event>   460000  1000000event>   470000  1000000event>   480000  1000000event>   490000  1000000event>   500000  1000000event>   510000  1000000event>   520000  1000000event>   530000  1000000event>   540000  1000000event>   550000  1000000event>   560000  1000000event>   570000  1000000event>   580000  1000000event>   590000  1000000event>   600000  1000000event>   610000  1000000event>   620000  1000000event>   630000  1000000event>   640000  1000000event>   650000  1000000event>   660000  1000000event>   670000  1000000event>   680000  1000000event>   690000  1000000event>   700000  1000000event>   710000  1000000event>   720000  1000000event>   730000  1000000event>   740000  1000000event>   750000  1000000event>   760000  1000000event>   770000  1000000event>   780000  1000000event>   790000  1000000event>   800000  1000000event>   810000  1000000event>   820000  1000000event>   830000  1000000event>   840000  1000000event>   850000  1000000event>   860000  1000000event>   870000  1000000event>   880000  1000000event>   890000  1000000event>   900000  1000000event>   910000  1000000event>   920000  1000000event>   930000  1000000event>   940000  1000000event>   950000  1000000event>   960000  1000000event>   970000  1000000event>   980000  1000000event>   990000  1000000event>   995000  1000000event>   998000  1000000event>   999000  1000000event>   999500  1000000event>   999800  1000000event>   999900  1000000event>   999950  1000000event>   999980  1000000event>   999990  1000000event>   999995  1000000event>   999998  1000000event>   999999  1000000event>  1000000  1000000
++ echo Stopping:
++ date
++ echo Done.

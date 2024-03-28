@@ -1,0 +1,106 @@
+# BEGIN PLOT
+Legend=1
+LogY=0
+Title=Transverse region $p_{T} > 0.5$ [GeV/c]
+XLabel=Leading jet $p_{T} [GeV/c]$
+YLabel=$ \langle \frac{dN_{ch}}{d\eta d\phi} \rangle$
+XTwosidedTicks=1
+YTwosidedTicks=1
+YMin=0
+YMax=3.5
+DrawOnly=/STAR_2019_I1771348/d02-x01-y02 //panfs/accrepfs.vampire/home/sohailu/Herwig_Tune/out/Rivet_Analyses/STAR_2019_I1771348/0000.yoda/STAR_2019_I1771348/d02-x01-y02 //panfs/accrepfs.vampire/home/sohailu/Herwig_Tune/out/Rivet_Analyses/STAR_2019_I1771348/0001.yoda/STAR_2019_I1771348/d02-x01-y02 //panfs/accrepfs.vampire/home/sohailu/Herwig_Tune/out/Rivet_Analyses/STAR_2019_I1771348/0002.yoda/STAR_2019_I1771348/d02-x01-y02 //panfs/accrepfs.vampire/home/sohailu/Herwig_Tune/out/Rivet_Analyses/STAR_2019_I1771348/0003.yoda/STAR_2019_I1771348/d02-x01-y02
+LegendOnly=/STAR_2019_I1771348/d02-x01-y02 //panfs/accrepfs.vampire/home/sohailu/Herwig_Tune/out/Rivet_Analyses/STAR_2019_I1771348/0000.yoda/STAR_2019_I1771348/d02-x01-y02 //panfs/accrepfs.vampire/home/sohailu/Herwig_Tune/out/Rivet_Analyses/STAR_2019_I1771348/0001.yoda/STAR_2019_I1771348/d02-x01-y02 //panfs/accrepfs.vampire/home/sohailu/Herwig_Tune/out/Rivet_Analyses/STAR_2019_I1771348/0002.yoda/STAR_2019_I1771348/d02-x01-y02 //panfs/accrepfs.vampire/home/sohailu/Herwig_Tune/out/Rivet_Analyses/STAR_2019_I1771348/0003.yoda/STAR_2019_I1771348/d02-x01-y02
+RatioPlot=1
+RatioPlotReference=/STAR_2019_I1771348/d02-x01-y02
+# END PLOT
+
+# BEGIN HISTO1D /STAR_2019_I1771348/d02-x01-y02
+ConnectBins=0
+ErrorBars=1
+IsRef=1
+Path=/STAR_2019_I1771348/d02-x01-y02
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+5.000000e+00	7.000000e+00	3.355000e-01	2.800018e-02	6.000008e-02
+7.000000e+00	9.000000e+00	3.368000e-01	4.000012e-02	4.000012e-02
+9.000000e+00	1.100000e+01	3.261000e-01	3.000017e-02	5.000010e-02
+1.100000e+01	1.500000e+01	3.073000e-01	2.000025e-02	5.000010e-02
+1.500000e+01	2.000000e+01	2.547000e-01	1.800111e-02	5.000040e-02
+2.000000e+01	2.500000e+01	2.370000e-01	1.400893e-02	4.000312e-02
+2.500000e+01	3.500000e+01	2.446000e-01	1.303840e-02	3.201562e-02
+3.500000e+01	4.500000e+01	2.410000e-01	1.552417e-02	3.224903e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //panfs/accrepfs.vampire/home/sohailu/Herwig_Tune/out/Rivet_Analyses/STAR_2019_I1771348/0000.yoda/STAR_2019_I1771348/d02-x01-y02
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//panfs/accrepfs.vampire/home/sohailu/Herwig_Tune/out/Rivet_Analyses/STAR_2019_I1771348/0000.yoda/STAR_2019_I1771348/d02-x01-y02
+Title=Herwig_Tune_0000
+# xlow	 xhigh	 val	 errminus	 errplus
+5.000000e+00	7.000000e+00	4.255665e-01	8.999947e-02	8.999947e-02
+7.000000e+00	9.000000e+00	2.387324e-01	3.978871e-02	3.978871e-02
+9.000000e+00	1.100000e+01	4.774648e-01	nan	nan
+1.100000e+01	1.500000e+01	3.580986e-01	1.193662e-01	1.193662e-01
+1.500000e+01	2.000000e+01	nan	nan	nan
+2.000000e+01	2.500000e+01	nan	nan	nan
+2.500000e+01	3.500000e+01	nan	nan	nan
+3.500000e+01	4.500000e+01	nan	nan	nan
+# END HISTO1D
+
+
+# BEGIN HISTO1D //panfs/accrepfs.vampire/home/sohailu/Herwig_Tune/out/Rivet_Analyses/STAR_2019_I1771348/0001.yoda/STAR_2019_I1771348/d02-x01-y02
+ErrorBars=1
+LineColor=blue
+LineStyle=solid
+Path=//panfs/accrepfs.vampire/home/sohailu/Herwig_Tune/out/Rivet_Analyses/STAR_2019_I1771348/0001.yoda/STAR_2019_I1771348/d02-x01-y02
+Title=Herwig_Tune_0001
+# xlow	 xhigh	 val	 errminus	 errplus
+5.000000e+00	7.000000e+00	1.939701e-01	4.476233e-02	4.476233e-02
+7.000000e+00	9.000000e+00	4.433601e-01	1.320867e-01	1.320867e-01
+9.000000e+00	1.100000e+01	0.000000e+00	nan	nan
+1.100000e+01	1.500000e+01	0.000000e+00	nan	nan
+1.500000e+01	2.000000e+01	0.000000e+00	nan	nan
+2.000000e+01	2.500000e+01	9.549297e-01	nan	nan
+2.500000e+01	3.500000e+01	nan	nan	nan
+3.500000e+01	4.500000e+01	nan	nan	nan
+# END HISTO1D
+
+
+# BEGIN HISTO1D //panfs/accrepfs.vampire/home/sohailu/Herwig_Tune/out/Rivet_Analyses/STAR_2019_I1771348/0002.yoda/STAR_2019_I1771348/d02-x01-y02
+ErrorBars=1
+LineColor=green
+LineStyle=solid
+Path=//panfs/accrepfs.vampire/home/sohailu/Herwig_Tune/out/Rivet_Analyses/STAR_2019_I1771348/0002.yoda/STAR_2019_I1771348/d02-x01-y02
+Title=Herwig_Tune_0002
+# xlow	 xhigh	 val	 errminus	 errplus
+5.000000e+00	7.000000e+00	3.282571e-01	7.819777e-02	7.819777e-02
+7.000000e+00	9.000000e+00	3.580986e-01	1.353486e-01	1.353486e-01
+9.000000e+00	1.100000e+01	nan	nan	nan
+1.100000e+01	1.500000e+01	nan	nan	nan
+1.500000e+01	2.000000e+01	nan	nan	nan
+2.000000e+01	2.500000e+01	nan	nan	nan
+2.500000e+01	3.500000e+01	nan	nan	nan
+3.500000e+01	4.500000e+01	nan	nan	nan
+# END HISTO1D
+
+
+# BEGIN HISTO1D //panfs/accrepfs.vampire/home/sohailu/Herwig_Tune/out/Rivet_Analyses/STAR_2019_I1771348/0003.yoda/STAR_2019_I1771348/d02-x01-y02
+ErrorBars=1
+LineColor=orange
+LineStyle=solid
+Path=//panfs/accrepfs.vampire/home/sohailu/Herwig_Tune/out/Rivet_Analyses/STAR_2019_I1771348/0003.yoda/STAR_2019_I1771348/d02-x01-y02
+Title=Herwig_Tune_0003
+# xlow	 xhigh	 val	 errminus	 errplus
+5.000000e+00	7.000000e+00	5.729580e-01	9.390916e-02	9.390916e-02
+7.000000e+00	9.000000e+00	3.580985e-01	2.067484e-01	2.067484e-01
+9.000000e+00	1.100000e+01	2.984155e-01	1.501992e-01	1.501992e-01
+1.100000e+01	1.500000e+01	7.161970e-01	4.774650e-01	4.774650e-01
+1.500000e+01	2.000000e+01	2.387324e-01	nan	nan
+2.000000e+01	2.500000e+01	nan	nan	nan
+2.500000e+01	3.500000e+01	nan	nan	nan
+3.500000e+01	4.500000e+01	nan	nan	nan
+# END HISTO1D
+

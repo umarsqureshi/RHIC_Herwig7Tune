@@ -1,0 +1,63 @@
+# BEGIN PLOT
+Legend=1
+LogY=1
+Title=Production cross section of $c\bar{c}$
+XLabel=$p_\mathrm{T}$ (GeV/$c$)
+YLabel=$d^2\sigma^{c\bar{c}}/(2\pi p_T dp_T dy)$ mb/(GeV/$c$)$^2$
+FullRange=1
+DrawOnly=/STAR_2012_I1111571/d01-x01-y01 //panfs/accrepfs.vampire/home/sohailu/Herwig_Tune/out/Rivet_Analyses/STAR_2012_I1111571/STAR_2012_I1111571_0001.yoda/STAR_2012_I1111571/d01-x01-y01 //panfs/accrepfs.vampire/home/sohailu/Herwig_Tune/out/Rivet_Analyses/STAR_2012_I1111571/STAR_2012_I1111571_0002.yoda/STAR_2012_I1111571/d01-x01-y01
+LegendOnly=/STAR_2012_I1111571/d01-x01-y01 //panfs/accrepfs.vampire/home/sohailu/Herwig_Tune/out/Rivet_Analyses/STAR_2012_I1111571/STAR_2012_I1111571_0001.yoda/STAR_2012_I1111571/d01-x01-y01 //panfs/accrepfs.vampire/home/sohailu/Herwig_Tune/out/Rivet_Analyses/STAR_2012_I1111571/STAR_2012_I1111571_0002.yoda/STAR_2012_I1111571/d01-x01-y01
+RatioPlot=1
+RatioPlotReference=/STAR_2012_I1111571/d01-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /STAR_2012_I1111571/d01-x01-y01[0]
+ConnectBins=0
+ErrorBars=1
+IsRef=1
+Path=/STAR_2012_I1111571/d01-x01-y01[0]
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+6.000000e-01	1.200000e+00	1.520000e-02	7.304827e-03	5.920490e-03
+1.200000e+00	2.000000e+00	5.380000e-03	1.997198e-03	1.970609e-03
+2.000000e+00	3.000000e+00	1.010000e-03	3.314408e-04	3.314408e-04
+3.000000e+00	4.000000e+00	1.750000e-04	6.733394e-05	6.733394e-05
+4.000000e+00	5.000000e+00	2.920000e-05	1.262775e-05	1.262775e-05
+5.000000e+00	6.000000e+00	9.510000e-06	3.390870e-06	3.390870e-06
+# END HISTO1D
+
+
+# BEGIN HISTO1D //panfs/accrepfs.vampire/home/sohailu/Herwig_Tune/out/Rivet_Analyses/STAR_2012_I1111571/STAR_2012_I1111571_0001.yoda/STAR_2012_I1111571/d01-x01-y01
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//panfs/accrepfs.vampire/home/sohailu/Herwig_Tune/out/Rivet_Analyses/STAR_2012_I1111571/STAR_2012_I1111571_0001.yoda/STAR_2012_I1111571/d01-x01-y01
+ScaledBy=6.26967843780854082e-04
+Title=Tune_0001
+# xlow	 xhigh	 val	 errminus	 errplus
+6.000000e-01	1.200000e+00	1.703267e-04	1.212419e-04	1.212419e-04
+1.200000e+00	2.000000e+00	2.489337e-04	9.432014e-05	9.432014e-05
+2.000000e+00	3.000000e+00	8.407281e-05	4.244181e-05	4.244181e-05
+3.000000e+00	4.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+4.000000e+00	5.000000e+00	1.036407e-05	1.036406e-05	1.036406e-05
+5.000000e+00	6.000000e+00	9.544716e-06	9.544716e-06	9.544716e-06
+# END HISTO1D
+
+
+# BEGIN HISTO1D //panfs/accrepfs.vampire/home/sohailu/Herwig_Tune/out/Rivet_Analyses/STAR_2012_I1111571/STAR_2012_I1111571_0002.yoda/STAR_2012_I1111571/d01-x01-y01
+ErrorBars=1
+LineColor=blue
+LineStyle=solid
+Path=//panfs/accrepfs.vampire/home/sohailu/Herwig_Tune/out/Rivet_Analyses/STAR_2012_I1111571/STAR_2012_I1111571_0002.yoda/STAR_2012_I1111571/d01-x01-y01
+ScaledBy=6.07134490017608580e-04
+Title=Tune_0002
+# xlow	 xhigh	 val	 errminus	 errplus
+6.000000e-01	1.200000e+00	1.912823e-04	1.361498e-04	1.361498e-04
+1.200000e+00	2.000000e+00	1.086943e-04	6.360836e-05	6.360836e-05
+2.000000e+00	3.000000e+00	9.763799e-05	4.385173e-05	4.385173e-05
+3.000000e+00	4.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+4.000000e+00	5.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e+00	6.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+# END HISTO1D
+

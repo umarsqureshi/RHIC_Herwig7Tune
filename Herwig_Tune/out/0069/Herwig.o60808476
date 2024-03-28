@@ -1,0 +1,14 @@
+Preparing:
+Tue Feb 27 18:14:38 CST 2024
+Requirement already satisfied: six in ./.local/lib/python3.6/site-packages (1.16.0)
+################ /  / ^^/ ##########################
+############### /--/   / ###########################
+############## /  /   / ############################
+
+HepMCFile: generated HepMC output.
+
+BasicConsistency: maximum 4-momentum violation: 0.003 MeV
+
+Stopping:
+Tue Feb 27 18:48:20 CST 2024
+Done.

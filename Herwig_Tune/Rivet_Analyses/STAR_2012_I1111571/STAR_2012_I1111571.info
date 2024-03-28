@@ -1,0 +1,30 @@
+Name: STAR_2012_I1111571 
+Year: 2012
+Summary: D0 and D* production p+p @ 200 GeV
+Experiment: STAR 
+Collider: RHIC pp 200 GeV 
+InspireID: 1111571
+Status: UNVALIDATED NOTREENTRY NOHEPDATA SINGLEWEIGHT UNPHYSICAL
+Authors:
+ -  Jan Vanek <vanek@ujf.cas.cz> 
+References:
+ - Phys.Rev.D 86 (2012) 072013, 2012.
+ - arXiv:1204.4244 [nucl-ex]
+#RunInfo: <Describe event types, cuts, and other general generator config tips.>
+#Beams: [p+, p+]
+#Energies: [200]
+#Luminosity_fb: 0.0054
+Description:
+  pT distribution of c-cbar production on p+p collisions at 200 GeV
+ValidationInfo:
+  'A description of the process used to validate the Rivet code against
+  the original experimental analysis. Cut-flow tables and similar information
+  are welcome'
+#ReleaseTests:
+# - $A my-hepmc-prefix :MODE=some_rivet_flag
+Keywords: []
+BibKey: 
+BibTeX: ''
+ToDo:
+ - Implement the analysis, test it, remove this ToDo, and mark as VALIDATED :-)
+

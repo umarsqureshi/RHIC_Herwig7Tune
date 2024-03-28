@@ -1,0 +1,52 @@
+# BEGIN PLOT
+Legend=1
+LogY=0
+Title=Toward region $p_{T} > 0.2$ [GeV/c]
+XLabel=Leading jet $p_{T} [GeV/c]$
+YLabel=$ \langle \frac{dN_{ch}}{d\eta d\phi} \rangle$
+XTwosidedTicks=1
+YTwosidedTicks=1
+YMin=0
+YMax=3.5
+DrawOnly=/STAR_2019_I1771348/d01-x01-y01 //panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0000/2019.yoda/STAR_2019_I1771348/d01-x01-y01
+LegendOnly=/STAR_2019_I1771348/d01-x01-y01 //panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0000/2019.yoda/STAR_2019_I1771348/d01-x01-y01
+RatioPlot=1
+RatioPlotReference=/STAR_2019_I1771348/d01-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /STAR_2019_I1771348/d01-x01-y01
+ConnectBins=0
+ErrorBars=1
+IsRef=1
+Path=/STAR_2019_I1771348/d01-x01-y01
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+5.000000e+00	7.000000e+00	1.397500e+00	1.400001e-01	7.000029e-02
+7.000000e+00	9.000000e+00	1.452300e+00	2.000001e-01	7.000029e-02
+9.000000e+00	1.100000e+01	1.493400e+00	1.700001e-01	8.000025e-02
+1.100000e+01	1.500000e+01	1.552100e+00	1.300003e-01	9.000050e-02
+1.500000e+01	2.000000e+01	1.604600e+00	1.000012e-01	9.000139e-02
+2.000000e+01	2.500000e+01	1.673000e+00	7.001207e-02	1.000084e-01
+2.500000e+01	3.500000e+01	1.708000e+00	8.003905e-02	1.000312e-01
+3.500000e+01	4.500000e+01	1.791000e+00	6.100000e-02	1.205031e-01
+# END HISTO1D
+
+
+# BEGIN HISTO1D //panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0000/2019.yoda/STAR_2019_I1771348/d01-x01-y01
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//panfs/accrepfs.vampire/data/rke_group/Herwig_Tune/out/0000/2019.yoda/STAR_2019_I1771348/d01-x01-y01
+Title=2019
+# xlow	 xhigh	 val	 errminus	 errplus
+5.000000e+00	7.000000e+00	1.442774e+00	1.785237e-01	1.785237e-01
+7.000000e+00	9.000000e+00	1.671127e+00	1.908203e-01	1.908203e-01
+9.000000e+00	1.100000e+01	1.671127e+00	nan	nan
+1.100000e+01	1.500000e+01	1.432395e+00	4.774647e-01	4.774647e-01
+1.500000e+01	2.000000e+01	nan	nan	nan
+2.000000e+01	2.500000e+01	nan	nan	nan
+2.500000e+01	3.500000e+01	nan	nan	nan
+3.500000e+01	4.500000e+01	nan	nan	nan
+# END HISTO1D
+
